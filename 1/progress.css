@@ -1,0 +1,38 @@
+.speech-bubble {
+    background-color: #0f0e0ec4;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin: 15px 0px;
+}
+
+
+#progress-bar{
+    border: solid 1px black;
+}
+
+.container-mid{
+    border: solid 1px black;
+    padding: 0px 20px;
+    margin-top: -20px;
+}
+
+.w3-grey{
+    width: 100%;
+    height: 30px;
+}
+
+#donation{
+    width: 100%;
+}
+
+#giveNow{
+    width: 100%;
+}
+
+#bottomButton{
+    width: 100%;
+}
