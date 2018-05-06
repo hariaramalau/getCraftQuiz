@@ -4,7 +4,7 @@ const url = "mongodb://localhost:27017/heroes";
 const Heroes = require("./heroes");
 
 
-var AddNewHeroes = (obj, callback) => {
+let AddNewHeroes = (obj, callback) => {
     MongoClient.connect(url, (err, db) => {
         if(err){
             throw err;
@@ -21,13 +21,13 @@ var AddNewHeroes = (obj, callback) => {
     });
 }
 
-var GetHeroesById = (id, callback) => {
+let GetHeroesById = (id, callback) => {
     MongoClient.connect(url, (err, db) => {
         if(err){
             throw err;
         }
 
-        var o_id = new ObjectID(id)
+        let o_id = new ObjectID(id)
         db.collection("heroeslist").findOne({ _id : o_id}, (err, res) => {
             if(err){
                 throw err;
@@ -39,7 +39,7 @@ var GetHeroesById = (id, callback) => {
     });
 }
 
-var GetAllHeroes = (callback) => {
+let GetAllHeroes = (callback) => {
     MongoClient.connect(url, (err, db) => {
         if(err){
             throw err;
@@ -56,13 +56,13 @@ var GetAllHeroes = (callback) => {
     });
 }
 
-var DeleteHeroes = (id, callback) => {
+let DeleteHeroes = (id, callback) => {
     MongoClient.connect(url, (err, db) => {
         if(err){
             throw err;
         }
 
-        var o_id = new ObjectID(id)
+        let o_id = new ObjectID(id)
         db.collection("heroeslist").deleteOne({ _id : o_id}, (err, res) => {
             if(err){
                 throw err;
@@ -74,13 +74,13 @@ var DeleteHeroes = (id, callback) => {
     });
 }
 
-var UpdateHeroes = (id, newObj, callback) => {
+let UpdateHeroes = (id, newObj, callback) => {
     MongoClient.connect(url, (err, db) => {
         if(err){
             throw err;
         }
 
-        var o_id = new ObjectID(id)
+        let o_id = new ObjectID(id)
         db.collection("heroeslist").updateOne({ _id : o_id}, newObj, (err, res) => {
             if(err){
                 throw err;

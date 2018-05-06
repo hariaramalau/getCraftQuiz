@@ -52,13 +52,5 @@ function allPowersList(){
     return temp;
 }
 
-// function allPowersList() {
-//     for (var i = 0; i < arr.length; i++) {
-//         for (var j = 0; j < i.powers; j++) {
-//             temp.push(eleen);
-//         }
-//     }
-//     return temp;
-// }
 
 console.log(allPowersList());
