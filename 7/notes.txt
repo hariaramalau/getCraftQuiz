@@ -1,0 +1,2 @@
+I made a mockup on how I would do REST API with the assumption that the database is MongoDB.
+I would try to make an API based on my answer on number 6 but I am simply not well accustomed with MySQL

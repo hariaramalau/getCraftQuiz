@@ -47,7 +47,7 @@ var temp = [];
 
 function allPowersList(){
     arr.forEach(function(element){
-       temp.push.apply(element.powers);
+       temp.push(element.powers);
     })
     return temp;
 }
@@ -55,7 +55,7 @@ function allPowersList(){
 // function allPowersList() {
 //     for (var i = 0; i < arr.length; i++) {
 //         for (var j = 0; j < i.powers; j++) {
-//             temp.push.apply(i[j]);
+//             temp.push(eleen);
 //         }
 //     }
 //     return temp;
