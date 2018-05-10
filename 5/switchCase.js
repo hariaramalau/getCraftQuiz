@@ -1,4 +1,4 @@
-var condition = 'foo';
+var condition = 'stool';
 
 switch (condition) {
     case 'foo':
