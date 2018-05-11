@@ -45,8 +45,33 @@ var arr = [
     }
 ]
 
-let powerList = arr.map(function(hero){
-    return hero.powers;
-})
+// function unique(array) {
+//     return array.reduce(function(previous, item){
+//         if(!previous.includes(item)){
+//             previous.push(item)
+//         }
+//         return previous
+//     },[])
+// }
+// console.log(unique(arr));
 
-console.log(powerList)
+let powersList = arr.map(function (hero) {
+    return hero.powers;
+});
+
+let newArray = powersList.reduce((a, b) => [...a, ...b], []);
+
+function unique(array) {
+    return array.reduce(function(previous, item){
+        if(!previous.includes(item)){
+            previous.push(item)
+        }
+        return previous
+    },[])
+}
+console.log(unique(newArray));
+
+
+
+
+
